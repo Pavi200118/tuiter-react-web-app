@@ -1,0 +1,110 @@
+.wd-card {
+margin: 0 auto; /* Centers the card horizontally */
+  max-width: 470px; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom : 15px;
+
+}
+.wd-container{
+margin: 0 auto; /* Centers the card horizontally */
+  max-width: 550px; /* Adjust the width as needed */
+
+
+  overflow: hidden;
+  margin-bottom : 15px;
+
+}
+.wd-container-s{
+margin-left : 45px;
+}
+.wd-icon-text-2{
+margin-left : 10px;
+margin-right : 55px;
+}
+
+.wd-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wd-card-content {
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+
+.wd-card-content p {
+  margin: 5px 0 0;
+  color : grey;
+}
+.wd-main{
+color:black;}
+
+.wd-top-bar{
+margin: 0 auto;
+margin-bottom : 10px;
+margin-top : 20px;
+/* Centers the card horizontally */
+  max-width: 720px;
+
+}
+.wd-top-bar i {
+  margin-right: 50px; /* Adjust the value as needed */
+}
+.wd-abc{
+
+margin-left : 340px;}
+.wd-abcd{
+
+margin-left : 180px;}
+.wd-back{
+margin-left : 40px;
+}
+.wd-top-bar .wd-icon-text {
+  margin-left: 30px;
+   font-weight :bold;/* Adjust the value as needed */
+}
+.wd-heart{
+color : red;}
+.wd-post{
+margin-left : 60px;
+
+margin-top : 10px;
+margin-bottom : 15px;
+}
+.wd-card-whole{
+margin: 0 auto;
+max-width:650px;
+margin-top : 5px;
+border: 1px solid lightgray;
+
+}
+.wd-text-book{
+color: grey;
+margin-left:5teslarati.jpegpx;
+}
+.rounded-circle{
+
+    margin-left :-50px;
+    overflow: hidden;
+    width : 50px;
+    height: 50px;
+    }
+    .wd-space{
+    margin-top :15px;
+    margin-left :5px;
+    display:flex;
+    align-items:center;
+    }
+    .wd-image{
+    margin-left:-0px;
+    margin-right:10px;}
+    hr{
+    color:grey;}
+
+
+
+

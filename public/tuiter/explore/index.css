@@ -1,0 +1,367 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+     .wd-container {
+      width : 570px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .wd-search-wrapper {
+    margin-left : -25px;
+    width : 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: lightgray;
+      border-radius: 20px;
+      padding: 10px;
+
+      box-sizing: border-box;
+    }
+
+    .wd-search-input {
+    flex: 1;
+      border: none;
+      outline: none;
+      background-color: lightgray;
+      color: darkgray;
+      padding-left: 35px;
+
+
+    }
+
+    .wd-search-input::placeholder {
+      color: darkgray;
+    }
+
+    .wd-magnifying-glass {
+      position: absolute;
+      left: 10px;
+    }
+
+    .wd-gear-icon {
+      margin-left: 10px;
+      color: darkgray;
+
+
+    }
+.wd-navbar-container {
+
+width: 100%;
+  font-size: 0;
+  margin-bottom: 10px;
+}
+
+
+.wd-navbar-container ul {
+
+	 margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+}
+
+.wd-navbar-container ul li {
+
+
+	font-size: 15px;
+	  white-space: nowrap;
+
+}
+
+.wd-navbar-container ul li a {
+	text-color : blue;
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+.wd-navbar-container ul li .underline {
+	height: 3px;
+	width: 0%;
+	margin: 0 auto;
+}
+
+
+.wd-navbar-container ul li.active-link .underline {
+	width: 100%;
+	background-color: blue;
+}
+.wd-card img{
+display:block;
+margin-top: 10px;
+width = 100%;
+height=200px;
+}
+
+
+.wd-text-overlay {
+  position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.wd-text-overlay-1 {
+  position: absolute;
+  bottom: 20px;
+  left: 600px;
+  color: #ffffff;
+  transform:translate(-50%,-50%);
+
+  font-weight: bold;
+}
+
+   .wd-tweet-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .wd-tweet {
+      margin-bottom: 20px;
+      background-color: #ffffff;
+      padding: 10px;
+    }
+
+    .wd-tweet-trending {
+      color: #808080;
+    }
+    .wd-tweet-trending span{
+          float : right;
+        }
+
+    .wd-tweet-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 5px;
+      margin-bottom: 3px;
+    }
+
+    .wd-tweet-count {
+      font-size: 14px;
+      color: #808080;
+    }
+    .first{
+    margin-top:10px;
+   margin-left:50px;
+    }
+
+    .tuit{
+
+     color : blue;
+}
+
+    .rounded-pill{
+
+    margin-top:10px;
+    width:150px;
+    background-color : #3388FF;
+    }
+    .rounded-circle{
+
+    margin-top : -1px;
+    width: 100%;
+      height: 100%;
+      object-fit: cover;
+    margin-left :-90px;
+    overflow: hidden;
+    border-radius: 50%;
+    width : 48px;
+    height: 48px;
+    }
+
+    .java{
+        margin-top : 5px;
+        margin-left :-20px;
+        width : 60px;
+        position : relative;
+        }
+    .wd-icon-text {
+    margin-left: -40px;
+      float : left;
+      position : middle;
+display: inline-block;
+    }
+
+    .icon {
+      margin-right: 5px;
+    }
+    .follow-button {
+margin-right:-50px;
+                      border-radius: 20px;
+        }
+        .wd-secondary{
+        color : grey;}
+
+    .icon {
+       margin-left : -10px;
+       font-size: 3em;
+     }
+     .second{
+     margin-top:10px;
+margin-left:10px;
+max-width:450px;
+          }
+          .iconsleft{
+          float:left;
+          }
+          .exp{
+          text-align:left;}
+
+
+.wd-main-container{
+margin: 0 auto;
+border: 2px solid lightgray;
+  max-width: 620px;
+}
+.card-whole{
+margin-top : 5px;
+border: 1px solid lightgray;
+
+}
+.tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.tabs li {
+  margin-right: 62px;
+}
+
+.tabs li:last-child {
+  margin-right: 0;
+}
+
+.tabs li label {
+  display: block;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.tabs li label span {
+
+}
+.space{
+margin-left:15px;}
+
+.tabs li.selected label::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: blue;
+}
+.wd-divider{
+width:10px;
+margin-left:20px;
+margin-right:-30px;
+margin:top : 10px;}
+
+.column{
+
+align-items : center;
+display:flex;}
+.home{
+margin-left:5px;}
+.list-group-container {
+margin: 0 auto;
+  width: 100%;
+}
+.rounded-square-img {
+margin-left:1px;
+width:100px;
+  border-radius: 5px;
+}
+
+.middle{
+margin-left:-10px;
+max-width:650px;
+}
+@media (max-width:767.98px){
+.nav-tabs{
+flex-wrap:wrap;
+flex-wrap: nowrap;
+    overflow-x: auto; }
+.nav-tabs .nav-item{
+
+  flex: 0 0 25%; }}
+
+
+   @media (max-width: 768px) {
+   	.wd-navbar-container ul li {
+   		 flex-shrink: 1;
+   	}
+   }
+
+@media (max-width: 768px) {
+  .rounded-pill {
+    width: 100%;
+  }
+  .list-group-item .col-sm-10 {
+    max-width: calc(100% - 80px); /* Adjust the value as needed */
+  }
+  @media (max-width: 768px) {
+    .wd-navbar-container ul li:last-child {
+      display: none; /* Hide the last li element */
+    }
+  }
+    @media (max-width: 960px) {
+    .col-3,
+   .col-6 {
+    flex: 0 0 100%;
+    max-width: 10vw;
+     }
+    }
+    @media (max-width: 767px) {
+      .list-group-item {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+
+      .list-group-item .col {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .list-group-item .col:first-child {
+        flex: 0 0 48px;
+        margin-right: 10px;
+      }
+
+      .list-group-item .wd-icon-text {
+        flex-grow: 1;
+      }
+
+      .follow-button {
+        margin-left: auto;
+      }
+    }
+    .text{
+    font-weight: bold;}
+
+
+
+
+
+
+
