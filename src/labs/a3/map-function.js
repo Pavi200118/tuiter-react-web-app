@@ -1,6 +1,6 @@
 import React from 'react';
 function MapFunction() {
-  let numberArray1 = [1, 2, 3, 4, 5];
+  let numberArray1 = [1, 2,4,5,6];
 
   const square = (a) => a * a;
 
@@ -10,9 +10,9 @@ function MapFunction() {
   return (
     <div>
       <h3>Map</h3>
-      squares = {JSON.stringify(squares)}
+      squares = {(squares)}
       <br />
-      cubes = {JSON.stringify(cubes)}
+      cubes = {(cubes)}
       <br />
     </div>
   );
