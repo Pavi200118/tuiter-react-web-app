@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f788551d-2ceb-48be-87a4-065f922c1fce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/crown.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/java.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/jquery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/js.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/nasa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/nodejs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/react.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/space.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/starship.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/tesla.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/tesla2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/teslaicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/teslarati.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/virgal.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/adding-and-removing-data-to-from-arrays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/array-index-and-length.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/arrow-functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/classes/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/classes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/conditional-output/conditional-output-if-else.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/conditional-output/conditional-output-inline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/conditional-output/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/destructing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/es5-functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/filter-function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/find-function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/find-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/for-loops.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/function-destructing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/function-parenthesis-and-parameters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/house.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/if-else.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/implied-return.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/json-stringify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/map-function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/spread.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/styles/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/template-literals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/ternary-operator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/todo/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/todo/todo-List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/todo/todo-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/todo/todos.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/working-with-arrays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/a3/working-with-functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/bookmarks-screen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/explore-screen/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/explore-screen/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/home-screen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/navigation-sidebar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/profile-screen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/tuit-summary-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/tuit-summary-list/tuit-summary-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/tuit-summary-list/tuits.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/who-to-follow-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/who-to-follow-list/who-to-follow-list-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tuiter/who-to-follow-list/who.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PSzAGApULdlSUzXrfTqVgY5jiU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/pavithra/web-dev/src/images",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tuiter" />
+      <recent name="$PROJECT_DIR$/src/labs/a3" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f788551d-2ceb-48be-87a4-065f922c1fce" name="Changes" comment="" />
+      <created>1683465126594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683465126594</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
