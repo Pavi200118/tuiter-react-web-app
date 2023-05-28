@@ -22,8 +22,8 @@ function JavaScript() {
           <IfElse/>
           <TernaryOperator/>
           <WorkingWithFunctions/>
+           <WorkingWithArrays/>
           <TemplateLiterals/>
-          <WorkingWithArrays/>
           <House/>
           <Spread/>
           <Destructing/>
