@@ -8,10 +8,22 @@ import BookmarksScreen from "./bookmarks-screen";
 import ProfileScreen from "./profile-screen";
 import WhoToFollowListItem
   from "./who-to-follow-list/who-to-follow-list-item";
+  import TuitSummaryItem from "./tuit-summary-list/tuit-summary-item";
+  import TuitSummaryList from "./tuit-summary-list/index";
 import WhoToFollowList from "./who-to-follow-list";
+import whoReducer from "./reducers/who-reducer";
+import { configureStore } from '@reduxjs/toolkit';
+import {Provider} from "react-redux";
+import anothertuitsReducer from "./reducers/tuits-reducer-2";
+import tuittuitReducer from "./tuits/tuits-reducer";
+const store = configureStore(
+  {reducer: {who: whoReducer, anothertuits: anothertuitsReducer, tuits : tuittuitReducer}});
+
 
 function Tuiter() {
    return(
+   <Provider store={store}>
+
       <div>
       <Nav/>
         <div className="row">
@@ -35,7 +47,7 @@ function Tuiter() {
                </div>
              </div>
            </div>
-
+ </Provider>
    );
 }
 export default Tuiter

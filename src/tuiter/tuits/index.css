@@ -1,0 +1,34 @@
+.tuit-stats {
+  display: flex;
+  align-items: center;
+}
+.tuit-topic{
+font-weight : bold;}
+.tuit-stat {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.tuit-stat-icon {
+  margin-right: 15px;
+}
+.liked {
+  color: red;
+}
+
+.tuit-verified-icon {
+  color: #4267B2;
+  margin-left : 5px;
+  margin-right : 5px;
+}
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
