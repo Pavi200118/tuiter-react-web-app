@@ -1,17 +1,50 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./index.css";
+
 const NavigationSidebar = () => {
- const { pathname } = useLocation();
- const [ignore, tuiter, active] = pathname.split("/");
- const links = ["home",     "explore",   "notifications", "messages", "bookmarks", "lists", "profile",  "more"];
- return (
-   <div className="list-group">
-     {links.map((link) =>
-         <Link to={`/tuiter/${link}`} className={`list-group-item text-capitalize ${active === link ? "active" : ""}`}>
-           {link}
-         </Link>
-     )}
-   </div>
- );
+  const { pathname } = useLocation();
+  const [ignore, tuiter, active] = pathname.split("/");
+  const links = [ "home", "explore", "notifications", "messages", "bookmarks", "lists", "profile", "more"];
+  const icons = {
+
+    home: "fa fa-home",
+    explore: "fa fa-hashtag",
+    notifications: "fa fa-bell",
+    messages: "fa fa-envelope",
+    bookmarks: "fa fa-bookmark",
+    lists: "fa fa-list",
+    profile: "fa fa-user",
+    more: "fas fa-ellipsis",
+  };
+
+  return (
+    <div className="list-group">
+<Link to="/tuiter" className="list-group-item text-capitalize">
+        <span className="icon">
+          <i className="fab fa-twitter"></i>
+        </span>
+      </Link>
+      {links.map((link) => (
+
+        <Link
+          to={`/tuiter/${link}`}
+          className={`list-group-item text-capitalize ${
+            active === link ? "active" : ""
+          }`}
+          key={link}
+        >
+
+          <span className="icon">
+            <i className={icons[link]}></i>
+          </span>
+          <span className="text">{link}</span>
+        </Link>
+      ))}
+      <button className="btn btn-primary rounded-pill mt-3">Tuit</button>
+    </div>
+  );
 };
+
 export default NavigationSidebar;

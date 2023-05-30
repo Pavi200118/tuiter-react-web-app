@@ -19,20 +19,20 @@ function ExploreScreen() {
                        fs-3 position-relative"/>
        </div>
      </div>
-     <ul className="nav nav-pills mb-2 mt-2">
-       <li className="nav-item">
+     <ul className="nav nav-pills nav-fill mb-2 mt-2 d-flex flex-wrap">
+       <li className="nav-item flex-grow-1">
          <a className="nav-link active">For You</a>
        </li>
-       <li className="nav-item">
+       <li className="nav-item flex-grow-1">
          <a className="nav-link">Trending</a>
        </li>
-       <li className="nav-item">
+       <li className="nav-item flex-grow-1">
          <a className="nav-link">News</a>
        </li>
-       <li className="nav-item">
+       <li className="nav-item flex-grow-1">
                 <a className="nav-link">Sports</a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item flex-grow-1 d-none d-sm-inline">
                        <a className="nav-link">Entertainment</a>
                      </li>
 
