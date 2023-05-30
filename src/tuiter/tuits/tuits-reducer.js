@@ -15,6 +15,7 @@ const templateTuit = {
  "replies": 0,
  "retuits": 0,
  "likes": 0,
+
 }
 
 const tuitsSlice = createSlice({
@@ -28,13 +29,17 @@ const tuitsSlice = createSlice({
       state.tuits.splice(index, 1);
     },
 
-   createTuit(state, action) {
+ createTuit(state, action) {
+
      state.tuits.unshift({
+
        ...action.payload,
        ...templateTuit,
        _id: (new Date()).getTime(),
      })
    }
+
+
  }
 });
 

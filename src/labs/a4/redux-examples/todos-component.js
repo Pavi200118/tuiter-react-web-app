@@ -4,8 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {addTodo, deleteTodo, todoDoneToggle} from "./reducers/todos-reducer";
 
 const Todos = () => {
- const todos
-       = useSelector(state => state.todos);
+ const todos = useSelector(state => state.todos);
        const [todo, setTodo] = useState({do: ''});
        const dispatch = useDispatch();
        const toggleTodoDone = (todo) => {

@@ -1,28 +1,32 @@
 import React, {useState} from "react";
+
 import { AiOutlinePicture } from "react-icons/ai";
 import { AiOutlineFileGif } from "react-icons/ai";
 import { MdFormatListBulleted } from "react-icons/md";
 import { BsEmojiSmile } from "react-icons/bs";
 import { BsBarChart} from "react-icons/bs";
 import { IoIosCalendar } from "react-icons/io";
- // Replace with the actual package import
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BiBold, BiItalic } from "react-icons/bi";
+
  import {createTuit} from "./tuits/tuits-reducer";
  import {useDispatch} from "react-redux";
+
 const WhatsHappening = () => {
- let [whatsHappening, setWhatsHappening] = useState('');
+
+const [whatsHappening, setWhatsHappening] = useState('');
 const dispatch = useDispatch();
 
  const tuitClickHandler = () => {
    const newTuit = {
-      tuit: whatsHappening
-    }
-    dispatch(createTuit(newTuit));
-    setWhatsHappening("");
+     title: whatsHappening
+   };
 
+   dispatch(createTuit(newTuit));
 
- }
+   setWhatsHappening("");
+ };
+
  return (
 
    <div className="row">

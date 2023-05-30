@@ -3,7 +3,7 @@ import TuitItem from "./tuit-item";
  // Assuming you have tuits.json in the same directory
  import {useSelector} from "react-redux";
 const TuitsList = () => {
-const { tuits } = useSelector(state => state.tuits);
+const { tuits } = useSelector((state) => state.tuits);
   return (
   <ul className="list-group">
     <div className="tuits-list">
