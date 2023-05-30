@@ -36,10 +36,10 @@ const NavigationSidebar = () => {
           key={link}
         >
 
-          <span className="icon">
+          <span className="wd-icon">
             <i className={icons[link]}></i>
           </span>
-          <span className="text">{link}</span>
+          <span className="wd-text">{link}</span>
         </Link>
       ))}
       <button className="btn btn-primary rounded-pill mt-3">Tuit</button>

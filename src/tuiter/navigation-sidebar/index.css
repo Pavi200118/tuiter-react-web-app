@@ -10,17 +10,17 @@
   transform: translateY(-50%);
 }
 
-.icon {
+.wd-icon {
   display: inline-block;
   margin-right: 8px;
 }
 
-.text {
+.wd-text {
   display: none;
 }
 
 @media (min-width: 1200px) {
-  .text {
+  .wd-text {
     display: inline;
   }
 }

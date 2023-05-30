@@ -19,24 +19,26 @@ function ExploreScreen() {
                        fs-3 position-relative"/>
        </div>
      </div>
-     <ul className="nav nav-pills nav-fill mb-2 mt-2 d-flex flex-wrap">
-       <li className="nav-item flex-grow-1">
+
+     <ul className="nav nav-pills nav-fill mb-2 mt-2 wd-tabs">
+       <li className="nav-item wd-abc">
          <a className="nav-link active">For You</a>
        </li>
-       <li className="nav-item flex-grow-1">
+       <li className="nav-item wd-abc">
          <a className="nav-link">Trending</a>
        </li>
-       <li className="nav-item flex-grow-1">
+       <li className="nav-item wd-abc">
          <a className="nav-link">News</a>
        </li>
-       <li className="nav-item flex-grow-1">
+       <li className="nav-item wd-abc">
                 <a className="nav-link">Sports</a>
               </li>
-              <li className="nav-item flex-grow-1 d-none d-sm-inline">
+              <li className="nav-item d-none d-sm-inline wd-abc">
                        <a className="nav-link">Entertainment</a>
                      </li>
 
      </ul>
+
      <div className="position-relative mb-2">
        <img src={starshipImage} className="w-100"/>
        <h1 className="position-absolute wd-nudge-up text-white">
