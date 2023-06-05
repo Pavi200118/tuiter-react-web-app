@@ -9,7 +9,7 @@ import { IoIosCalendar } from "react-icons/io";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BiBold, BiItalic } from "react-icons/bi";
 
- import {createTuit} from "./tuits/tuits-reducer";
+import {createTuitThunk} from "./services/tuits-thunks";
  import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -22,7 +22,7 @@ const dispatch = useDispatch();
      title: whatsHappening
    };
 
-   dispatch(createTuit(newTuit));
+    dispatch(createTuitThunk(newTuit));
 
    setWhatsHappening("");
  };
@@ -40,7 +40,7 @@ const dispatch = useDispatch();
                onChange={(event) => setWhatsHappening(event.target.value)}>
        </textarea>
        <div>
-         <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
+         <button className="rounded-pill btn btn-primary  float-end mt-2 ps-3 pe-3 fw-bold"
                  onClick={tuitClickHandler}>
            Tuit
          </button>

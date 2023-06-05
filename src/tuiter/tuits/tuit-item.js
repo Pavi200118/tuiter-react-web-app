@@ -1,5 +1,7 @@
 import {useDispatch} from "react-redux";
-import {createTuit, deleteTuit} from "./tuits-reducer.js";
+import {createTuit} from "./tuits-reducer.js";
+import {deleteTuitThunk} from "../services/tuits-thunks";
+
 import TuitStats from "./tuit-stats";
 import { BsXLg } from 'react-icons/bs';
 
@@ -9,6 +11,7 @@ const TuitItem = (
 {
 
     tuit = {
+     "id" : 123,
      "topic": "Space",
      "userName": "@spacex",
      "time": "2h",
@@ -25,10 +28,10 @@ const TuitItem = (
 
  }
  ) => {
- const dispatch = useDispatch();
-const deleteTuitHandler = (id) => {
 
-  dispatch(deleteTuit(id));
+ const dispatch = useDispatch();
+const deleteTuitHandler = (id) => { // Verify the structure and properties of the `tuit` object
+  dispatch(deleteTuitThunk(id));
 }
 return(
 <>
@@ -54,13 +57,18 @@ return(
          </button>
        </div>
      </div>
-     <div className="col-auto">
-            <TuitStats
-            liked={tuit.liked}
-            replies={tuit.replies}
-            retuits={tuit.retuits}
-            likes={tuit.likes}/>
-          </div>
+     <div className="col-auto abc">
+       <div className="tuit-stats-container">
+
+         <TuitStats
+           tuit = {tuit}
+           liked={tuit.liked}
+           replies={tuit.replies}
+           retuits={tuit.retuits}
+           likes={tuit.likes}
+         />
+       </div>
+     </div>
      </div>
 </li>
 </>

@@ -15,9 +15,11 @@ import whoReducer from "./reducers/who-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import anothertuitsReducer from "./reducers/tuits-reducer-2";
-import tuittuitReducer from "./tuits/tuits-reducer";
+import tuitReducer from "./tuits/tuits-reducer";
 const store = configureStore(
-  {reducer: {who: whoReducer, anothertuits: anothertuitsReducer, tuits : tuittuitReducer}});
+  {reducer: {who: whoReducer,
+  anothertuits: anothertuitsReducer,
+  tuits : tuitReducer}});
 
 
 function Tuiter() {

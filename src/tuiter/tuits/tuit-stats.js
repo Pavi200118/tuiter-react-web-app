@@ -1,8 +1,13 @@
 import React from "react";
 import { BsChatSquare, BsHeart, BsHeartFill,BsArrowRepeat, BsShare } from "react-icons/bs";
 import "./index.css";
+import { updateTuitThunk } from "../services/tuits-thunks";
+import { useDispatch } from "react-redux";
 
-const TuitStats = ({ liked, replies, retuits, likes }) => {
+
+
+const TuitStats = ({ tuit, liked, replies, retuits, likes }) => {
+const dispatch = useDispatch();
   return (
     <div className="tuit-stats">
       <div className="tuit-stat">
@@ -17,7 +22,7 @@ const TuitStats = ({ liked, replies, retuits, likes }) => {
         {liked ? (
                   <BsHeartFill className="tuit-stat-icon liked" />
                 ) : (
-                  <BsHeart className="tuit-stat-icon" />
+                  <BsHeart className="tuit-stat-icon" onClick={() => dispatch(updateTuitThunk({...tuit, likes: likes + 1 }))}/>
                 )}
         <span className="tuit-stat-count">{likes}</span>
       </div>

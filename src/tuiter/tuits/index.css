@@ -1,20 +1,37 @@
 .tuit-stats {
   display: flex;
   align-items: center;
+
+
 }
 .tuit-topic{
 font-weight : bold;}
+
 .tuit-stat {
+
   display: flex;
   align-items: center;
-  margin-left: 80px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+   max-width: 100%;
+
+
+}
+@media (min-width: 300px) {
+  .tuit-stat {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 980px) {
+  .tuit-stat {
+    padding-left: 70px;
+  }
 }
 
 .tuit-stat-icon {
-  margin-right: 15px;
+  margin-right: 10px;
+
 }
 .liked {
   color: red;
@@ -30,5 +47,6 @@ font-weight : bold;}
   top: 0;
   right: 0;
 }
+
 
 
