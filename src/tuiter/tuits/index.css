@@ -4,15 +4,33 @@
 }
 .tuit-topic{
 font-weight : bold;}
+
 .tuit-stat {
   display: flex;
   align-items: center;
-  margin-left: 80px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 10px;
+   margin-top: 20px;
+      margin-bottom: 20px;
+       margin-right: 10px;
+}
+@media (min-width: 1200px)  {
+  .tuit-stat {
+    margin-left: 80px;
+
+  }
+}
+@media (min-width: 801px) and (max-width: 1199px) {
+  .tuit-stat {
+    margin-left: 20px;
+    margin-right: 5px;
+  }
 }
 
+@media (max-width: 800px){
+.tuit-stat {
+    margin-left: 10px;
+    margin-right: 2px;
+  }
+}
 .tuit-stat-icon {
   margin-right: 15px;
 }
