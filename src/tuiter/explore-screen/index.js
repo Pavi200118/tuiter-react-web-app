@@ -4,7 +4,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { GoGear } from "react-icons/go";
 import { useSelector, useDispatch } from "react-redux";
 import "./index.css";
-import starshipImage from "../../images/starship1.j peg";
+import starshipImage from "../../images/starship1.jpeg";
 import { initializeTuits } from "../reducers/tuits-reducer-2";
 
 function ExploreScreen() {
