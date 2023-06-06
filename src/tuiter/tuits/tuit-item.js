@@ -61,6 +61,7 @@ return(
             retuits={tuit.retuits}
             likes={tuit.likes}/>
           </div>
+
      </div>
 </li>
 </>
