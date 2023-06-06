@@ -31,6 +31,7 @@ useEffect(() => {
           replies={tuit.replies}
           retuits={tuit.retuits}
           likes={tuit.likes}
+          dislikes = {tuit.dislikes}
           handle={tuit.handle}
           tuit={tuit}
         />

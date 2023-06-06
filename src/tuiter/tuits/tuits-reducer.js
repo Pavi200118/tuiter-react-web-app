@@ -20,6 +20,7 @@ const templateTuit = {
  "replies": 0,
  "retuits": 0,
  "likes": 0,
+ "dislikes":0,
 
 }
 
@@ -29,6 +30,7 @@ const tuitsSlice = createSlice({
  extraReducers: {
  [updateTuitThunk.fulfilled]:
    (state, { payload }) => {
+
      state.loading = false
      const tuitNdx = state.tuits.findIndex((t) => t._id === payload._id)
      state.tuits[tuitNdx] = { ...state.tuits[tuitNdx], ...payload }
@@ -40,6 +42,7 @@ const tuitsSlice = createSlice({
      },
  [deleteTuitThunk.fulfilled] :
        (state, { payload }) => {
+
        state.loading = false
        state.tuits = state.tuits .filter(t => t._id !== payload)
      },

@@ -3,7 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 
+import { useSelector } from "react-redux";
+
 const NavigationSidebar = () => {
+ const { currentUser } = useSelector((state) => state.user);
+
   const { pathname } = useLocation();
   const [ignore, tuiter, active] = pathname.split("/");
   const links = [ "home", "explore", "notifications", "messages", "bookmarks", "lists", "profile", "more"];
@@ -43,6 +47,10 @@ const NavigationSidebar = () => {
         </Link>
       ))}
       <button className="btn btn-primary rounded-pill mt-3">Tuit</button>
+      {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
+      {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
+      { currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
+
     </div>
   );
 };
