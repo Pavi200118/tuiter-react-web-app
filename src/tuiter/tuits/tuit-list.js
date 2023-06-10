@@ -8,7 +8,10 @@ const TuitsList = () => {
 const {tuits, loading} = useSelector((state) => state.tuits);
 const dispatch = useDispatch();
 useEffect(() => {
+
    dispatch(findTuitsThunk())
+
+     // eslint-disable-next-line react-hooks/exhaustive-deps
  }, [])
 
   return (
@@ -23,16 +26,6 @@ useEffect(() => {
       {tuits.map((tuit) => (
         <TuitItem
          key={tuit._id}
-          userName={tuit.userName}
-          title={tuit.title}
-          time={tuit.time}
-          image={tuit.image}
-          liked={tuit.liked}
-          replies={tuit.replies}
-          retuits={tuit.retuits}
-          likes={tuit.likes}
-          dislikes = {tuit.dislikes}
-          handle={tuit.handle}
           tuit={tuit}
         />
       ))}

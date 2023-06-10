@@ -5,69 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f788551d-2ceb-48be-87a4-065f922c1fce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/crown.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/java.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/jquery.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/js.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/nasa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/nodejs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/react.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/space.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/starship.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/tesla.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/tesla2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teslaicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teslarati.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/virgal.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/adding-and-removing-data-to-from-arrays.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/array-index-and-length.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/arrow-functions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/classes/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/classes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/conditional-output/conditional-output-if-else.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/conditional-output/conditional-output-inline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/conditional-output/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/destructing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/es5-functions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/filter-function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/find-function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/find-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/for-loops.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/function-destructing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/function-parenthesis-and-parameters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/house.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/if-else.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/implied-return.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/json-stringify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/map-function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/spread.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/styles/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/template-literals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/ternary-operator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/todo/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/todo/todo-List.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/todo/todo-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/todo/todos.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/working-with-arrays.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/a3/working-with-functions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/bookmarks-screen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/explore-screen/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/explore-screen/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/home-screen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/navigation-sidebar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/profile-screen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/tuit-summary-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/tuit-summary-list/tuit-summary-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/tuit-summary-list/tuits.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/who-to-follow-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/who-to-follow-list/who-to-follow-list-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tuiter/who-to-follow-list/who.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.bash_profile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/reducers/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/reducers/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/services/auth-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/services/auth-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/services/auth-thunks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/services/auth-thunks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/services/tuits-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/services/tuits-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/services/tuits-thunks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/services/tuits-thunks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/tuits/tuit-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/tuits/tuit-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/tuits/tuit-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/tuits/tuit-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/tuits/tuit-stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/tuits/tuit-stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/tuits/tuits-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/tuits/tuits-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/user/login-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/user/login-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/user/profile-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/user/profile-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/user/register-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/user/register-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tuiter/whats-happening.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tuiter/whats-happening.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,16 +40,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pavithra/web-dev/public/images&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/pavithra/web-dev/public/images",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />

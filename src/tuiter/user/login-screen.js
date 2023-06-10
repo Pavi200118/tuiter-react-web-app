@@ -2,15 +2,21 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { loginThunk } from "../services/auth-thunks";
+import ProfileScreen from "./profile-screen";
+import {BrowserRouter} from "react-router-dom";
+import {Routes, Route} from "react-router";
 function LoginScreen() {
  const [username, setUsername] = useState("");
  const [password, setPassword] = useState("");
  const navigate = useNavigate();
  const dispatch = useDispatch();
+
  const handleLogin = async () => {
   try {
+
     await dispatch(loginThunk({ username, password }));
-    navigate("/profile");
+
+    navigate("/tuiter/profile");
   } catch (e) {
     alert(e);
   }
@@ -31,6 +37,7 @@ function LoginScreen() {
                      onClick={handleLogin}>
                Login
              </button>
+
             </div>
 );
 }

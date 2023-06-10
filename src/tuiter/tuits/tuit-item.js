@@ -11,7 +11,7 @@ const TuitItem = (
 {
 
     tuit = {
-     "id" : 123,
+     "_id" : 123,
      "topic": "Space",
      "userName": "@spacex",
      "time": "2h",
@@ -21,7 +21,7 @@ const TuitItem = (
      "replies": 123,
      "retuits": 432,
      "likes": 2345,
-     "dislikes": 33,
+     "dislikes": 0,
      "handle": "@spacex",
      "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
 
@@ -62,12 +62,8 @@ return(
        <div className="tuit-stats-container">
 
          <TuitStats
-           tuit = {tuit}
-           liked={tuit.liked}
-           dislikes = {tuit.dislikes}
-           replies={tuit.replies}
-           retuits={tuit.retuits}
-           likes={tuit.likes}
+          key = {tuit._id}
+          tuit={tuit}
          />
        </div>
      </div>

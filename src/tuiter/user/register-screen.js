@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
-import { register } from "../services/auth-thunks";
+import { registerThunk } from "../services/auth-thunks";
 
 function RegisterScreen() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleRegister = async () => {
-    await dispatch(register({ username, password }));
+    await dispatch(registerThunk({ username, password }));
+
   };
 
   return (

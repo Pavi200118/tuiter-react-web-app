@@ -3,7 +3,7 @@ import Labs from "./labs";
 import { Navigate } from 'react-router-dom';
 import HelloWorld from "./labs/a3/hello-world";
 import Tuiter from "./tuiter";
-
+import ProfileScreen from "./tuiter/user/profile-screen";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 function App() {
@@ -16,6 +16,7 @@ function App() {
           <Route path="/labs/*"   element={<Labs/>}/>
           <Route path="/hello"    element={<HelloWorld/>}/>
           <Route path="/tuiter/*" element={<Tuiter/>}/>
+          <Route path="/profile" element={<ProfileScreen/>}/>
         </Routes>
              </div>
               </BrowserRouter>

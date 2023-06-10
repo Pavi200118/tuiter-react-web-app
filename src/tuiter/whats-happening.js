@@ -19,7 +19,8 @@ const dispatch = useDispatch();
 
  const tuitClickHandler = () => {
    const newTuit = {
-     title: whatsHappening
+     title: whatsHappening,
+     dislikes: 0
    };
 
     dispatch(createTuitThunk(newTuit));

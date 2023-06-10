@@ -7,30 +7,44 @@ import { useDispatch } from "react-redux";
 
 
 
-const TuitStats = ({ tuit, liked, replies, retuits, likes, dislikes }) => {
+const TuitStats = ( {tuit} ) => {
 
 const dispatch = useDispatch();
+const updateTuitHandler = (tuits, likes, liked) => {
+  dispatch(updateTuitThunk( tuits, likes, liked));
+}
   return (
     <div className="tuit-stats">
       <div className="tuit-stat">
         <BsChatSquare className="tuit-stat-icon" />
-        <span className="tuit-stat-count">{replies}</span>
+        <span className="tuit-stat-count">{tuit.replies}</span>
       </div>
       <div className="tuit-stat">
         <BsArrowRepeat className="tuit-stat-icon" />
-        <span className="tuit-stat-count">{retuits}</span>
+        <span className="tuit-stat-count">{tuit.retuits}</span>
       </div>
       <div className="tuit-stat">
-        {liked ? (
-                  <BsHeartFill className="tuit-stat-icon liked" />
+        {tuit.liked ? (
+                  <BsHeartFill className="tuit-stat-icon liked" onClick={() => updateTuitHandler({
+                                                                                      ...tuit,
+                                                                                       likes: tuit.likes - 1,
+                                                                                        liked: false
+                                                                                        })}/>
                 ) : (
-                  <BsHeart className="tuit-stat-icon" onClick={() => dispatch(updateTuitThunk({...tuit, likes: likes + 1 }))}/>
+                  <BsHeart className="tuit-stat-icon" onClick={() => updateTuitHandler({
+                                                                             ...tuit,
+                                                                             likes: tuit.likes + 1,
+                                                                             liked: true
+                                                                         })}/>
                 )}
-        <span className="tuit-stat-count">{likes}</span>
+        <span className="tuit-stat-count">{tuit.likes}</span>
       </div>
       <div className = "tuit-stat">
-      <FaThumbsDown className="tuit-stat-icon" onClick={() => dispatch(updateTuitThunk({...tuit, dislikes: dislikes + 1 }))}/>
-      <span className="tuit-stat-count">{dislikes}</span>
+      <FaThumbsDown className="tuit-stat-icon" onClick={() => updateTuitHandler({
+                                                                      ...tuit,
+                                                                      dislikes: tuit.dislikes + 1
+                                                                  })}/>
+      <span className="tuit-stat-count">{tuit.dislikes}</span>
       </div>
       <div className="tuit-stat">
         <BsShare className="tuit-stat-icon" />
