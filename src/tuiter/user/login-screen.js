@@ -11,11 +11,10 @@ function LoginScreen() {
  const navigate = useNavigate();
  const dispatch = useDispatch();
 
- const handleLogin = async () => {
+ const handleLogin = () => {
   try {
 
-    await dispatch(loginThunk({ username, password }));
-
+    dispatch(loginThunk({ username, password }));
     navigate("/tuiter/profile");
   } catch (e) {
     alert(e);

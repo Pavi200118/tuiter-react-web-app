@@ -17,7 +17,6 @@ function ProfileScreen() {
  const navigate = useNavigate();
 
  const save = () => {
- console.log(profile)
  dispatch(updateUserThunk({profile}));
  };
 
@@ -29,7 +28,7 @@ console.log(payload)
   }
   fetchData();
  }, [dispatch]);
-
+console.log(profile)
  return ( <div>
             <h1>Profile Screen</h1>
 
