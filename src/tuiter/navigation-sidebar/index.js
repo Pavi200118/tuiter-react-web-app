@@ -47,10 +47,22 @@ const NavigationSidebar = () => {
         </Link>
       ))}
       <button className="btn btn-primary rounded-pill mt-3">Tuit</button>
-      {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
-      {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
-      { currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
 
+       {!currentUser && <Link className={`list-group-item text-capitalize ${active === "login" ? "active" : ""}`} to="/tuiter/login">
+                <FontAwesomeIcon className="pe-2" icon={faSignIn} />
+                <span className="d-none d-xl-inline">{"login"}</span>
+            </Link>
+            }
+            {!currentUser && <Link className={`list-group-item text-capitalize ${active === "register" ? "active" : ""}`} to="/tuiter/register">
+                <FontAwesomeIcon className="pe-2" icon={faUserPlus} />
+                <span className="d-none d-xl-inline">{"register"}</span>
+            </Link>
+            }
+            {currentUser && <Link className={`list-group-item text-capitalize ${active === "profile" ? "active" : ""}`} to="/tuiter/profile">
+                <FontAwesomeIcon className="pe-2" icon={faUser} />
+                <span className="d-none d-xl-inline">{"profile"}</span>
+            </Link>
+            }
     </div>
   );
 };

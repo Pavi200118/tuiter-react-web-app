@@ -34,7 +34,7 @@ console.log(profile)
 
             {profile && (<div>
               <div>
-               <label htmlFor="firstName">First Name:</label>
+               <label>First Name:</label>
                &nbsp;
                <input  id="firstName" type="text" value={profile.firstName || ""}
                 onChange={(event) => {
@@ -46,7 +46,7 @@ console.log(profile)
               </div>
 
               <div>
-               <label htmlFor="lastName">Last Name:</label>
+               <label>Last Name:</label>
                &nbsp;
                <input  id="lastName" type="text" value={profile.lastName || ""}
                 onChange={(event) => {
