@@ -23,7 +23,7 @@ function ProfileScreen() {
  useEffect(() => {
  async function fetchData(){
    const { payload } = await dispatch(profileThunk());
-console.log(payload)
+   console.log(payload)
    setProfile(payload);
   }
   fetchData();

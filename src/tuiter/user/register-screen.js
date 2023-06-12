@@ -11,7 +11,9 @@ function RegisterScreen() {
 
   const handleRegister = async () => {
     await dispatch(registerThunk({ username, password }));
-    navigate("/tuiter/profile");
+    setTimeout(() => {
+        navigate("/tuiter/profile");
+      }, 2000);
   };
 
   return (
