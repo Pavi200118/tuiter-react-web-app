@@ -59,13 +59,16 @@ function ProfileScreen() {
                 }}/>
               </div></div>
             )}
-            <button className="btn btn-primary mt-2"
+           <button
+             className="btn btn-primary mt-2"
              onClick={() => {
                dispatch(logoutThunk());
-
-                       navigate("/tuiter/login");
-
-             }}style={ backgroundColor: 'red'}>                   Logout </button>
+               navigate("/tuiter/login");
+             }}
+             style={{ backgroundColor: 'red', color: 'white' }}
+           >
+             Logout
+           </button>
 &nbsp;&nbsp;&nbsp;&nbsp;
             <button className="btn btn-primary mt-2" onClick={save}>  Save  </button>
            </div> );
