@@ -11,7 +11,7 @@ const NavigationSidebar = () => {
 
   const { pathname } = useLocation();
   const [ignore, tuiter, active] = pathname.split("/");
-  const links = [ "home", "explore", "notifications", "messages", "bookmarks", "lists", "profile", "more"];
+  const links = [ "home", "explore", "notifications", "messages", "bookmarks", "lists", "more"];
   const icons = {
 
     home: "fa fa-home",
@@ -20,7 +20,7 @@ const NavigationSidebar = () => {
     messages: "fa fa-envelope",
     bookmarks: "fa fa-bookmark",
     lists: "fa fa-list",
-    profile: "fa fa-user",
+
     more: "fas fa-ellipsis",
   };
 
@@ -48,7 +48,7 @@ const NavigationSidebar = () => {
         </Link>
 
       ))}
-      {!currentUser && <Link className={`list-group-item text-capitalize ${active === "login" ? "active" : ""}`} to="/tuiter/login">
+                 {!currentUser && <Link className={`list-group-item text-capitalize ${active === "login" ? "active" : ""}`} to="/tuiter/login">
                       <FontAwesomeIcon className="pe-2" icon={faSignIn} />
                       <span className="d-none d-xl-inline">{"login"}</span>
                   </Link>
