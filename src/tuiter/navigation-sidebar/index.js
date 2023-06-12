@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faUser, faMinusCircle, faSignIn, faUserPlus} from '@fortawesome/free-solid-svg-icons';
+import {faUser, faMinusCircle, faSignIn, faUserPlus, faEllipsisH} from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from "react-redux";
 
 const NavigationSidebar = () => {
@@ -11,7 +11,7 @@ const NavigationSidebar = () => {
 
   const { pathname } = useLocation();
   const [ignore, tuiter, active] = pathname.split("/");
-  const links = [ "home", "explore", "notifications", "messages", "bookmarks", "lists", "more"];
+  const links = [ "home", "explore", "notifications", "messages", "bookmarks", "lists"];
   const icons = {
 
     home: "fa fa-home",
@@ -21,7 +21,7 @@ const NavigationSidebar = () => {
     bookmarks: "fa fa-bookmark",
     lists: "fa fa-list",
 
-    more: "fas fa-ellipsis",
+
   };
 
   return (
@@ -63,6 +63,10 @@ const NavigationSidebar = () => {
                       <span className="d-none d-xl-inline">{"profile"}</span>
                   </Link>
                   }
+                  <Link className={`list-group-item text-capitalize ${active === "more" ? "active" : ""}`} to="/tuiter/more">
+                                        <FontAwesomeIcon className="pe-2" icon={faEllipsisH} />
+                                        <span className="d-none d-xl-inline">{"more"}</span>
+                                    </Link>
       <button className="btn btn-primary rounded-pill mt-3">Tuit</button>
 
 
