@@ -17,7 +17,7 @@ function ProfileScreen() {
  const navigate = useNavigate();
 
  const save = () => {
- dispatch(updateUserThunk({profile}));
+ dispatch(updateUserThunk(profile));
  };
 
  useEffect(() => {
