@@ -28,7 +28,9 @@ function ProfileScreen() {
   }
   fetchData();
  }, [dispatch]);
+
 console.log(profile)
+
  return ( <div>
             <h1>Profile Screen</h1>
 
