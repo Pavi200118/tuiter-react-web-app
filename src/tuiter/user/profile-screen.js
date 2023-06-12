@@ -28,16 +28,17 @@ function ProfileScreen() {
          fetchData();
      }, []);
 
-console.log(profile)
+
 
  return ( <div>
             <h1>Profile Screen</h1>
 
             {profile && (<div>
-              <div>
+              <div className="mt-2">
                <label>First Name:</label>
                &nbsp;
-               <input id="firstName" type="text" value={profile.firstName || ""}
+
+               <input id="firstName" className="form-control" type="text" value={profile.firstName || ""}
                 onChange={(event) => {
                  const newProfile = {
                   ...profile, firstName: event.target.value,
@@ -46,10 +47,10 @@ console.log(profile)
                 }}/>
               </div>
 
-              <div>
+              <div className="mt-2">
                <label>Last Name:</label>
                &nbsp;
-               <input  id="lastName" type="text" value={profile.lastName || ""}
+               <input  id="lastName" className="form-control" type="text" value={profile.lastName || ""}
                 onChange={(event) => {
                  const newProfile = {
                   ...profile, lastName: event.target.value,
@@ -58,7 +59,7 @@ console.log(profile)
                 }}/>
               </div></div>
             )}
-            <button
+            <button className="btn btn-primary mt-2"
              onClick={() => {
                dispatch(logoutThunk());
 
@@ -66,7 +67,7 @@ console.log(profile)
 
              }}>                   Logout </button>
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <button onClick={save}>  Save  </button>
+            <button className="btn btn-primary mt-2" onClick={save}>  Save  </button>
            </div> );
 
 }
