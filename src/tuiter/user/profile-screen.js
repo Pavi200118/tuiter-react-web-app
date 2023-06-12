@@ -21,13 +21,12 @@ function ProfileScreen() {
  };
 
  useEffect(() => {
- async function fetchData(){
-   const { payload } = await dispatch(profileThunk());
-   console.log(payload)
-   setProfile(payload);
-  }
-  fetchData();
- }, [dispatch]);
+ const fetchData = async () => {
+             const { payload } = await dispatch(profileThunk());
+             setProfile(payload);
+         };
+         fetchData();
+     }, []);
 
 console.log(profile)
 
