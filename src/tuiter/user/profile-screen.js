@@ -65,7 +65,7 @@ function ProfileScreen() {
 
                        navigate("/tuiter/login");
 
-             }}>                   Logout </button>
+             }}style={ backgroundColor: 'red'}>                   Logout </button>
 &nbsp;&nbsp;&nbsp;&nbsp;
             <button className="btn btn-primary mt-2" onClick={save}>  Save  </button>
            </div> );
