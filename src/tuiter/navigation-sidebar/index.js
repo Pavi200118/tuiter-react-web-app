@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser, faMinusCircle, faSignIn, faUserPlus} from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from "react-redux";
 
