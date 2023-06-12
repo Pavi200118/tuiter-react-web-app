@@ -17,6 +17,7 @@ function ProfileScreen() {
  const navigate = useNavigate();
 
  const save = () => {
+ alert("Profile saved");
  dispatch(updateUserThunk(profile));
  };
 
