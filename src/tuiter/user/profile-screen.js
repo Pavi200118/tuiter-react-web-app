@@ -37,7 +37,7 @@ console.log(profile)
               <div>
                <label>First Name:</label>
                &nbsp;
-               <input  id="firstName" type="text" value={profile.firstName || ""}
+               <input id="firstName" type="text" value={profile.firstName || ""}
                 onChange={(event) => {
                  const newProfile = {
                   ...profile, firstName: event.target.value,
@@ -61,9 +61,9 @@ console.log(profile)
             <button
              onClick={() => {
                dispatch(logoutThunk());
-                setTimeout(() => {
+
                        navigate("/tuiter/login");
-                     }, 2000);
+
              }}>                   Logout </button>
 &nbsp;&nbsp;&nbsp;&nbsp;
             <button onClick={save}>  Save  </button>
