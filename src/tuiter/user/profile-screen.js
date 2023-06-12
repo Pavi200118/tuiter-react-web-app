@@ -60,7 +60,9 @@ console.log(profile)
             <button
              onClick={() => {
                dispatch(logoutThunk());
-               navigate("/tuiter/login");
+                setTimeout(() => {
+                       navigate("/tuiter/login");
+                     }, 2000);
              }}>                   Logout </button>
 &nbsp;&nbsp;&nbsp;&nbsp;
             <button onClick={save}>  Save  </button>
