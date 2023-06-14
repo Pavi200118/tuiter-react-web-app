@@ -9,9 +9,13 @@ import {BrowserRouter} from "react-router-dom";
 import ProtectedRoute
   from "./tuiter/user/protected-route";
 import {Routes, Route} from "react-router";
+import { Provider } from "react-redux";
+import { store } from "./tuiter/store";
 function App() {
  return (
+<Provider store={store}>
   <BrowserRouter>
+
   <AuthContext>
 
 <div className="container">
@@ -33,6 +37,7 @@ function App() {
              </AuthContext>
 
               </BrowserRouter>
+              </Provider>
    );
 }
 export default App;

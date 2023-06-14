@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { profileThunkget } from "../services/auth-thunks";
+import { getprofileThunk } from "../services/auth-thunks";
 
 
 function AuthContext ({ children }) {
 
-  const [loading, setLoading] = useState(true);
+const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   useEffect(() => {
     const load = async () => {
-      await dispatch(profileThunkget());
+      await dispatch(getprofileThunk());
       setLoading(false);
     };
     load();
@@ -19,8 +19,8 @@ function AuthContext ({ children }) {
   if (loading) {
 
     return (
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+      <div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>
     );
 
