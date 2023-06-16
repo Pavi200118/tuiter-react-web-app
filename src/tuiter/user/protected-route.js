@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { getprofileThunk } from "../services/auth-thunks";
+import { profileThunk } from "../services/auth-thunks";
 function ProtectedRoute({ children }) {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   useEffect(() => {
     const load = async () => {
-      const { payload } = await dispatch(getprofileThunk());
+      const { payload } = await dispatch(profileThunk());
       if (!payload) {
         navigate("/login");
       }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { getprofileThunk } from "../services/auth-thunks";
+import { profileThunk } from "../services/auth-thunks";
 
 
 function AuthContext ({ children }) {
@@ -9,7 +9,7 @@ const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   useEffect(() => {
     const load = async () => {
-      await dispatch(getprofileThunk());
+      await dispatch(profileThunk());
       setLoading(false);
     };
     load();
