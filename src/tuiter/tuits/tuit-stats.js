@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 
 
 const TuitStats = ( {tuit} ) => {
-console.log(tuit)
+
 const dispatch = useDispatch();
 const updateTuitHandler = (tuits, likes, liked) => {
   dispatch(updateTuitThunk( tuits, likes, liked));
@@ -31,8 +31,11 @@ const updateTuitHandler = (tuits, likes, liked) => {
                                                                                         liked: false
                                                                                         })}/>
                 ) : (
-                  <BsHeart className="tuit-stat-icon" onClick={() => dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 }))
-                                                                         }/>
+                  <BsHeart className="tuit-stat-icon" onClick={() => updateTuitHandler({
+                                                                             ...tuit,
+                                                                             likes: tuit.likes + 1,
+                                                                             liked: true
+                                                                         })}/>
                 )}
         <span className="tuit-stat-count">{tuit.likes}</span>
       </div>
