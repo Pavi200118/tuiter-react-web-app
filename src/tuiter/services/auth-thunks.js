@@ -8,15 +8,10 @@ export const loginThunk = createAsyncThunk(
    return user;
  });
 
-
-
 export const profileThunk = createAsyncThunk(
-  "users/profile", async () => {
-    const response = await authService.profile();
-    return response.data;
+ "auth/profile", async () => {
+ return await authService.profile();
 });
-
-
 export const logoutThunk = createAsyncThunk(
  "auth/logout", async () => {
  return await authService.logout();

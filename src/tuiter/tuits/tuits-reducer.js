@@ -14,7 +14,6 @@ const currentUser = {
 
 const templateTuit = {
  ...currentUser,
-  "_id" : 123,
  "topic": "Space",
  "time": "2h",
  "liked": false,
@@ -57,7 +56,7 @@ const tuitsSlice = createSlice({
              },
          [updateTuitThunk.fulfilled]:
              (state, { payload }) => {
-console.log(payload)
+
                  state.loading = false
                  const tuitNdx = state.tuits
                      .findIndex((t) => t._id === payload._id);

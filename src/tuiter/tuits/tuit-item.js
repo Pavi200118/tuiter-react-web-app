@@ -62,7 +62,7 @@ return(
        <div className="tuit-stats-container">
 
          <TuitStats
-          key={tuit._id}
+          key = {tuit._id}
           tuit={tuit}
          />
        </div>

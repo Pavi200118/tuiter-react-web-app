@@ -5,7 +5,6 @@ import LoginScreen from "./login-screen";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import * as authService from "../services/auth-service";
-import JsonStringify from "../../labs/a3/json-stringify";
 import { profileThunk, logoutThunk, updateUserThunk , registerThunk}
   from "../services/auth-thunks";
 function ProfileScreen() {
@@ -22,14 +21,14 @@ function ProfileScreen() {
  dispatch(updateUserThunk(profile));
  };
 
-   useEffect(() => {
-      async function fetchData() {
-        const { payload } = await dispatch(profileThunk());
+ useEffect(() => {
+ const fetchData = async () => {
+             const { payload } = await dispatch(profileThunk());
+             setProfile(payload);
+         };
+         fetchData();
+     }, []);
 
-        setProfile(payload);
-      }
-      fetchData();
-    }, [dispatch]);
 
 
  return ( <div>
@@ -63,8 +62,8 @@ function ProfileScreen() {
             )}
            <button
              className="btn btn-primary mt-2"
-             onClick={async() => {
-               await dispatch(logoutThunk());
+             onClick={() => {
+               dispatch(logoutThunk());
                navigate("/tuiter/login");
              }}
              style={{ backgroundColor: 'red', color: 'white' }}

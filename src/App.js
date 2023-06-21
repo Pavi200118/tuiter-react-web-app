@@ -4,20 +4,11 @@ import { Navigate } from 'react-router-dom';
 import HelloWorld from "./labs/a3/hello-world";
 import Tuiter from "./tuiter";
 import ProfileScreen from "./tuiter/user/profile-screen";
-import AuthContext from "./tuiter/user/auth-context";
 import {BrowserRouter} from "react-router-dom";
-import ProtectedRoute
-  from "./tuiter/user/protected-route";
 import {Routes, Route} from "react-router";
-import { Provider } from "react-redux";
-import { store } from "./tuiter/store";
 function App() {
  return (
-<Provider store={store}>
   <BrowserRouter>
-
-  <AuthContext>
-
 <div className="container">
 
 <Routes>
@@ -25,19 +16,10 @@ function App() {
           <Route path="/labs/*"   element={<Labs/>}/>
           <Route path="/hello"    element={<HelloWorld/>}/>
           <Route path="/tuiter/*" element={<Tuiter/>}/>
-          <Route
-              path="/profile"
-              element={
-                <ProtectedRoute>
-                  <ProfileScreen />
-                </ProtectedRoute>
-              }/>
+          <Route path="/profile" element={<ProfileScreen/>}/>
         </Routes>
              </div>
-             </AuthContext>
-
               </BrowserRouter>
-              </Provider>
    );
 }
 export default App;
