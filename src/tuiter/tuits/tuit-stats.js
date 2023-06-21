@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 
 
 const TuitStats = ( {tuit} ) => {
-
+console.log(tuit)
 const dispatch = useDispatch();
 const updateTuitHandler = (tuits, likes, liked) => {
   dispatch(updateTuitThunk( tuits, likes, liked));
