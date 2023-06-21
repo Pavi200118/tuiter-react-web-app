@@ -32,7 +32,7 @@ const updateTuitHandler = (tuits, likes, liked) => {
                                                                                         })}/>
                 ) : (
                   <BsHeart className="tuit-stat-icon" onClick={() => dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 }))
-                                                                         })}/>
+                                                                         }/>
                 )}
         <span className="tuit-stat-count">{tuit.likes}</span>
       </div>
